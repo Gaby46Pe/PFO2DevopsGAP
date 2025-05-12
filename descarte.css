@@ -1,0 +1,83 @@
+.navbar {
+    background-color: rgb(130, 25, 244);
+    height: 40px; 
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1p;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem; 
+  }
+
+  /* about section image css */
+.about {
+    display: flex;
+    justify-content: left;
+  /*text-align: justify;*/
+    align-items: center;
+  }
+  
+  
+.background-image {
+    background: url;  
+    background-size: cover;
+    position: relative;
+    width: 30rem;
+    height: 25rem;
+}
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_column_cards
+
+/* el titulo quedaba por arriba*/
+#skills {
+  color: rgb(130, 25, 244);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrado de las tarjetas */
+  margin-top: 10rem;
+  padding: 3rem 0;
+}
+
+h3, h4, h5, form { 
+  text-align:center; 
+} 
+
+      
+
+<!-- Sección Projects Trabajos parte 3-->
+   
+  <section id="morenewprojects">
+
+    <div>
+  
+      <h1>Primer página de GAP - Parte 3</h1>
+    
+      <h4>
+
+        <p style="color: rgb(130, 25, 244); font-size:30px; text-align:center; vertical-align: middle; margin-top: 50px; margin-bottom: 50px;"><u>Y un checkbox</u>        
+        </p> 
+        <img src="assets/images/46.jpg" style="margin-left: 0%;" alt="Moto" width="" height="90">
+
+        <img src="assets/images/93.jpg" alt="Moto" width="" height="90">
+                
+        <p>Elegí tu corredor favorito:</p>
+
+        
+        <input type="radio" id="vr46" name="fav_rider" value="VR46">
+        <label for="vr46">VR46</label><br>
+
+        <input type="radio" id="mm93" name="fav_rider" value="MM93">
+        <label for="mm93">MM93</label><br>
+    </h4>
+
+  </div>
+
+</section>
+
+
+#about ul {
+  list-style-type: none; /* Si deseas eliminar la numeración o viñetas */
+  padding-left: 0; /* Quitar el padding si es necesario */
+}
