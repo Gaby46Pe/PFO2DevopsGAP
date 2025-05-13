@@ -1,0 +1,379 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* para que el body y html ocupen todo el alto de la ventana */
+  background-image: url('/assets/images/Moto_fut_transp.png');
+  background-size: cover; /* para que cubra toda la pantalla */
+  background-attachment: fixed; /* deja el fondo fijo */
+  background-repeat: no-repeat;
+}
+
+.bgimage {
+  height: 100vh;
+  background: url; 
+  background-size: cover;
+  position: relative;
+  opacity: 0.5;
+}
+
+/* css de estilo para texto encima de la imagen hero */
+.hero_title {
+  font-size: 5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.hero_desc {
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(130, 25, 244); 
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: rgb(130, 25, 244);
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: rgb(130, 25, 244);
+  color: white;
+}
+
+#about {
+  color: rgb(130, 25, 244);
+  background-color: #f4cef1;
+  padding: 7rem 0; /* Agregué padding para top y bottom */
+  margin: 7rem 0;
+  width: 100%; /* para que el color ocupe todo el contenedor */
+}
+
+#about p {
+  margin-bottom: 1em; /* Ajusta el espacio entre párrafos según sea necesario */
+}
+
+.imageAboutPage {
+  border-radius: 45px; 
+  width: 100%; /* Cambia a 100% para que se ajuste a su columna */
+  max-width: 200px; /* Tamaño máximo absoluto */
+}
+
+.row.mt-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrado con Flexbox */
+}
+
+#skills {
+  color: rgb(130, 25, 244);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrado de las tarjetas */
+  margin-top: 10rem;
+  padding: 3rem 0;
+}
+
+ 
+.card {
+  display: flex;
+  flex-direction: column; /* Para alinear el contenido verticalmente */
+  justify-content: space-between; /* Espacio entre imagen y texto */
+  text-align: justify; /* Centrar texto de las tarjetas */
+  height: 400px; /* Altura fija para todas las tarjetas */
+  margin: 1rem; /* Espaciado entre tarjetas */
+}
+ 
+.navbar {
+  background-color: rgb(130, 25, 244, 0.9); /* Color con opacidad */
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  body {
+      background-attachment: scroll; /* para que el fondo se desplace en otras pantallas */
+      background-size: cover; /* para que cubra toda la imagen */
+  }
+}
+   
+/* Estilo para enlaces y su estado */
+.nav-link {
+    color: white;
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+.nav-link:hover {
+  color: yellow; /* Cambio de color al pasar el mouse */
+}
+
+.container-fluid.text-center {
+  display: flex;
+  justify-content: center; /* Puedes ajustar esto según lo necesites */
+  align-items: center;
+}
+
+.col-lg-4 {
+  justify-content: flex-start; /* Asegúrate que la imagen esté alineada a la izquierda */
+}
+
+.col-lg-8 {
+  text-align: justify;  
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  margin-bottom: 50px; /* Espacio debajo del título */
+  padding-bottom: 50px; /* Espacio interno debajo del título */
+}
+
+.container-fluid.text-center {
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  estilo para los íconos de redes sociales  */
+
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover {
+    color: #2771d1;
+}
+
+.fab {
+    color: #000000;
+}
+
+/* estilo del footer */
+
+#footer {
+    background-color: rgb(130, 25, 244);
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* espaciado en todas las secciones */
+
+#projects,
+#newprojects { 
+    margin-top: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    margin-bottom: 8rem;
+}
+
+#projects img {
+  margin: 20px 0; /* Espacio arriba y abajo de la imagen */
+  z-index: -1;  /* Prueba del z-index, posiciona la imagen detrás del texto */
+  position: absolute;
+  opacity: .5;
+}
+
+#projects h1 {
+  margin-bottom: 25px; /* Espacio debajo del título */
+}
+
+#projects h3 {
+  margin: 60px 0; /* Espacio arriba y abajo de los encabezados */
+}
+
+#morenewprojects { 
+  margin-top: 10rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  margin-bottom: 12rem;
+}
+
+#projects, #newprojects, #morenewprojects {
+  color: rgb(130, 25, 244);
+}
+  
+/* Combinador hijo directo - Si le saco el > también lo toma para el otro h3*/
+#newprojects div > h3 {
+  background-color: rgb(241, 241, 225);
+  margin-left: 0%;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color:rgb(130, 25, 244); 
+  margin-top: 30px; 
+  margin-bottom: 20px; 
+  font-size:50px;
+  text-align:center; 
+}
+
+h3, h4, h5, form { 
+  text-align:center; 
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+} 
+
+h4 p {
+  display: flex;
+  text-align:center; 
+}
+
+# morenewprojects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 0; /* Margen superior e inferior para la sección */
+}
+
+.container {
+  text-align: center; /* Centra todo el texto dentro del contenedor */
+}
+
+.heading {
+  color: rgb(130, 25, 244);
+  font-size: 40px;
+  margin: 50px 0; /* Espacios verticales alrededor del texto */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  gap: 20px; /* Espaciado entre las imágenes */
+  margin-bottom: 20px; /* Espacio debajo del contenedor de imágenes */
+}
+
+.favorite-label {
+  font-size: 25px;
+  margin-bottom: 30px; /* Espacio debajo del texto de etiqueta */
+}
+
+.radio-container {
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center; /* Centra las opciones de radio */
+  align-items: center; /* Alinea verticalmente las etiquetas */
+  margin-bottom: 10px; /* Espacio debajo de cada opción */
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+ 
+.vr46 {
+  color: yellow;  
+  font-size: 40px;
+} 
+ 
+.mm93 {
+  color: #FF0000; 
+  font-size: 40px;
+}
+ 
+#contact {
+    color:rgb(130, 25, 244); 
+    margin-top: 8rem;
+    padding-bottom: 6rem;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+}
+
+/* Ajustes de margen y padding */
+.listas {
+  margin: 10px 0;
+  padding: 10px;
+}
+article.listas{
+  color: rgb(130, 25, 244);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+ol.listas{
+  list-style-type: circle;
+  list-style-position: inside;
+}
+    
+table {
+  font-family: arial, sans-serif;
+  border: 5px solid black;
+  border-collapse: collapse;
+  width: 60%;
+  margin-top: 40px; /* Espacio arriba de la tabla */
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+  
+  td, th { 
+    width: 50%;
+    text-align: left;
+    padding: 8px;
+   }
+          
+   th {
+    height: 40%;
+   }
+
+ tr:nth-child(even) {
+  background-color: #db86f7; /* Color para filas pares */
+ }
+       
+ tr:nth-child(odd) {
+  background-color: #94ebfb; /* Color para filas impares */
+ }
+
+
+ button.btn.btn-success.mt-3 {
+  background-color: mediumpurple;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 1080px) {
+  /* Estilos para tablet horizontal */
+}
+
+@media (max-width: 768px) {
+  /* Estilos para tablet vertical */
+}
+
+@media (max-width: 480px) {
+  /* Estilos para móviles 1 */
+}
+
+@media (max-width: 375px) {
+  /* Estilos para móviles 2 */
+}
+
