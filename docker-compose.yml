@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  portafolio:
+    build: .
+    ports:
+      - "8085:80"
+    # Puedes agregar otras configuraciones si lo necesitas
